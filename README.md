@@ -1,70 +1,172 @@
-# Getting Started with Create React App
+Here's a **single combined `README.md` file** that documents **both the client and server** for your **Monexa** project clearly and professionally.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## ✅ `README.md` – Combined for Monexa
 
-In the project directory, you can run:
+```markdown
+# 🚀 Monexa – Modern Project Management & Issue Tracker
 
-### `npm start`
+Monexa is a full-stack web application that helps teams organize work, manage projects, and track issues efficiently – inspired by tools like Jira and Linear.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🌐 Live URLs
 
-### `npm test`
+- **Client** (Frontend – React): [https://monexa-client.vercel.app](https://monexa-client.vercel.app)
+- **Server** (Backend – Node.js + MongoDB): [https://monexa-server-production.up.railway.app](https://monexa-server-production.up.railway.app)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🧱 Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| Layer      | Tech Used |
+|------------|-----------|
+| Frontend   | React.js, Tailwind CSS |
+| Backend    | Node.js, Express.js |
+| Database   | MongoDB (Atlas) |
+| Auth       | JWT + Bcrypt |
+| Deployment | Vercel (client), Railway (server) |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🎨 Color Palette
 
-### `npm run eject`
+Custom Tailwind theme:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+\--primary-100: #2563eb;
+\--primary-200: #598EF3;
+\--primary-300: #D3E6FE;
+\--accent-100: #d946ef;
+\--accent-200: #fae8ff;
+\--text-100: #cbd5e1;
+\--text-200: #94a3b8;
+\--bg-100: #1e293b;
+\--bg-200: #334155;
+\--bg-300: #475569;
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 📦 Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- 🔐 JWT-based auth (register, login, forgot password)
+- 🧑‍💻 Role-based team members (Developer, Manager, Admin, Viewer)
+- 📁 Project creation & member management
+- 🎫 Ticket creation, Kanban board (drag-and-drop)
+- 🗓️ Dashboard with calendar, urgent tasks, project directory
+- ✅ Responsive UI with color consistency
+- ✨ Polished UI with modern dark-blue theme
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 📂 Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
 
-### Analyzing the Bundle Size
+monexa/
+├── monexa-client/     # React Frontend
+└── monexa-server/     # Express Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+````
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## ⚙️ Local Setup Guide
 
-### Advanced Configuration
+### 1️⃣ Clone Repos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+git clone https://github.com/LIKHITHKUMAR28/monexa-server.git
+git clone https://github.com/LIKHITHKUMAR28/monexa-client.git
+````
 
-### Deployment
+### 2️⃣ Server Setup (Backend)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+cd monexa-server
+npm install
+```
 
-### `npm run build` fails to minify
+Create `.env` file:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```env
+PORT=5000
+MONGO_URI=your_mongo_connection
+JWT_SECRET=your_secret_key
+```
+
+Start server:
+
+```bash
+npm run dev
+```
+
+Server runs on: `http://localhost:5000`
+
+---
+
+### 3️⃣ Client Setup (Frontend)
+
+```bash
+cd ../monexa-client
+npm install
+```
+
+Create `.env` file:
+
+```env
+REACT_APP_API_BASE_URL=https://monexa-server-production.up.railway.app
+```
+
+Start client:
+
+```bash
+npm start
+```
+
+Client runs on: `http://localhost:3000`
+
+---
+
+## 🌍 Deployment
+
+| Service           | Repo URL                                                                                           | Notes                             |
+| ----------------- | -------------------------------------------------------------------------------------------------- | --------------------------------- |
+| Railway (Backend) | [https://monexa-server-production.up.railway.app](https://monexa-server-production.up.railway.app) | Uses Railway for auto-deploy      |
+| Vercel (Frontend) | [https://monexa-client.vercel.app](https://monexa-client.vercel.app)                               | Linked to GitHub repo with `.env` |
+
+---
+
+## 📘 Important Files
+
+* `axios.js`: Centralized API handler (client)
+* `server.js`: Entry point (backend)
+* `authController.js`: Register/login/forgot logic
+* `.env`: Contains sensitive credentials (never upload this)
+
+---
+
+## 🙌 Author
+
+Built with 💙 by [Likhith Kumar](https://github.com/LIKHITHKUMAR28)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+```
+
+---
+
+### ✅ You can copy and place this `README.md`:
+- In the **root folder** of a monorepo
+- Or inside either repo (`monexa-client/` or `monexa-server/`) for unified documentation.
+
+Let me know if you want badges, screenshots, or a walk-through video demo script added!
+```
