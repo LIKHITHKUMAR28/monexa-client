@@ -1,10 +1,3 @@
-Here's a **single combined `README.md` file** that documents **both the client and server** for your **Monexa** project clearly and professionally.
-
----
-
-## ✅ `README.md` – Combined for Monexa
-
-```markdown
 # 🚀 Monexa – Modern Project Management & Issue Tracker
 
 Monexa is a full-stack web application that helps teams organize work, manage projects, and track issues efficiently – inspired by tools like Jira and Linear.
